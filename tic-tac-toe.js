@@ -33,7 +33,7 @@ window.addEventListener("load", (event)=> {
                 playerX = true;
             }
             
-            active = checkWinner();
+            active = isWinner();
 
             if (active == 1){
                document.querySelector("div#status").classList.add("you-won");
@@ -57,7 +57,7 @@ window.addEventListener("load", (event)=> {
             sq.classList.remove("hover");
         }
 
-        let checkWinner =()=> {
+        let isWinner =()=> {
 
             for (item = 0 ; winnerCheck.length; item++){
 
